@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "mars-condensed";
+    font-weight: 400;
+    src: url("fonts/marscondensedweb-regular-TRIAL.woff") format("woff");
+}
+
+@font-face {
+    font-family: "arnold";
+    font-weight: 400;
+    src: url("fonts/ArnoldTestv03.otf") format("otf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.big {
+    font-family: "mars-condensed";
+    font-size: 6.5em;
+    line-height: 0.95;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #ff17e3;
+}
+
+.briefcase {
+    margin: 75px;
+}
+
+.vinc_ref {
+    position: relative;
+}
+
+.glowing_vinc {
+    position: absolute;
+    display: none;
+}
+
+.vinc_pic {
+    width: 500px;
+} 
+
+.vinc_ref:hover .glowing_vinc {
+    display: block;
+}
+
+.kiss_ref {
+    position: relative;
+}
+
+.glowing_kiss {
+    position: absolute;
+    display: none;
+}
+
+.kiss_pic {
+    width: 500px;
+} 
+
+.kiss_ref:hover .glowing_kiss {
+    display: block;
+}
+
+
+h1 {
+    font-family: "mars-condensed";
+    font-weight: normal;
+    font-size: 7em;
+    line-height: 0.95;
+    text-align: center;
+}
+
+.small {
+    font-family: "arnold";
+}
+
+.dj_lips {
+    width: 50%;
+    border-top-color: black;
+    border-top: 200px;
+}
+
+.mia_lips {
+    width: 50%;
+    border-top-color: black;
+}
+
+.lips-pics {
+    display: flex;
+}
+
+.the_good_the_bad {
+    display: flex;
+}
+
+.the_good_the_bad_left_colum {
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.stevens_food {
+    margin-left: 20px;
+    margin-right: 40px;
+}
