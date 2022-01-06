@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Decibel v0.2 Trial';
+    src: url('fonts/Decibelv02Trial-Louderer.eot');
+    src: url('fonts/Decibelv02Trial-Louderer.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Decibelv02Trial-Louderer.woff2') format('woff2'),
+         url('fonts/Decibelv02Trial-Louderer.woff') format('woff'),
+         url('fonts/Decibelv02Trial-Louderer.ttf')  format('truetype'),
+         url('fonts/Decibelv02Trial-Louderer.svg#Decibel v0.2 Trial') format('svg');
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Arnold_v0.3';
+    src: url('fonts/ArnoldTestv03.eot');
+    src: url('fonts/ArnoldTestv03.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ArnoldTestv03.woff2') format('woff2'),
+         url('fonts/ArnoldTestv03.woff') format('woff'),
+         url('fonts/ArnoldTestv03.ttf')  format('truetype'),
+         url('fonts/ArnoldTestv03.svg#Arnold_v0.3') format('svg');
+}

@@ -5,9 +5,27 @@
 }
 
 @font-face {
+    font-family: "decibel";
+    font-weight: 400;
+    src: url("fonts/Decibelv02Trial-Louderer.woff") format("woff");
+}
+
+@font-face {
     font-family: "arnold";
     font-weight: 400;
-    src: url("fonts/ArnoldTestv03.otf") format("otf");
+    src: url("fonts/ArnoldTestv03.woff") format("woff");
+}
+
+@font-face {
+    font-family: "80kb";
+    font-weight: 400;
+    src: url("fonts/80-kb-Sharp.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "80kb-italic";
+    font-weight: 400;
+    src: url("fonts/80-kb-SharpItalic.woff2") format("woff2")
 }
 
 * {
@@ -20,46 +38,127 @@
     line-height: 0.95;
 }
 
+.small {
+    font-family: "arnold";
+}
+
 .underline {
     text-decoration: underline;
     text-decoration-color: #ff17e3;
+}
+
+.so-special {
+    height: 100vh;
+    width: 100vw;
+    margin-left: 100px;
+    background-color: black;
+    position: relative;
+}
+
+.white_wrap {
+    background-color: white;
+    height: 90vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.what_makes {
+    margin-top: 500px;
+    margin-bottom: 0;
+}
+
+.tarantino-special {
+    display: flex;
+}
+
+.decibel_small {
+    font-family: "decibel";
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.decibel_medium {
+    font-family: "decibel";
+    font-size: 150px;
+    line-height: 140px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.decibel_big {
+    font-family: "decibel";
+    font-size: 350px;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+.decibel_pink {
+    font-family: "decibel";
+    font-size: 500px;
+    color: #ff17e3;
+}
+
+.gersh_left {
+    font-family: "decibel";
+    font-size: 320px;
+    color: #ff17e3;
+}
+
+.gersh_right {
+    font-family: "decibel";
+    font-size: 320px;
+    color: #ff17e3;
+}
+
+.pink {
+    color: #ff17e3;
+}
+
+.i_steal_text {
+    display: flex;
+}
+
+.glow-briefcase {
+    display: flex;
+    height: 100vh;
+    align-items: center;
 }
 
 .briefcase {
     margin: 75px;
 }
 
-.vinc_ref {
+.a {
     position: relative;
 }
 
-.glowing_vinc {
+.b {
     position: absolute;
     display: none;
+    top: -20px;
 }
 
 .vinc_pic {
     width: 500px;
 } 
 
-.vinc_ref:hover .glowing_vinc {
+.a:hover .b {
     display: block;
 }
 
-.kiss_ref {
-    position: relative;
-}
 
-.glowing_kiss {
+.b {
     position: absolute;
     display: none;
+    top: 0;
 }
 
 .kiss_pic {
     width: 500px;
 } 
 
-.kiss_ref:hover .glowing_kiss {
+.a:hover .b {
     display: block;
 }
 
@@ -72,24 +171,24 @@ h1 {
     text-align: center;
 }
 
-.small {
-    font-family: "arnold";
-}
 
-.dj_lips {
-    width: 50%;
-    border-top-color: black;
-    border-top: 200px;
-}
-
-.mia_lips {
-    width: 50%;
-    border-top-color: black;
+.lips {
+    display: block;
+    height: 100vh;
+    align-items: center;
+    background-color: black;
 }
 
 .lips-pics {
-    display: flex;
+    background-color: white;
+    align-items: center;
 }
+
+.lips_together {
+    width: 100vw;
+}
+
+
 
 .the_good_the_bad {
     display: flex;
@@ -104,3 +203,110 @@ h1 {
     margin-left: 20px;
     margin-right: 40px;
 }
+
+.a {
+    position: relative;
+}
+
+.b {
+    position: absolute;
+    display: none;
+}
+
+.jv_pic {
+    width: 500px;
+} 
+
+.a:hover .b {
+    display: block;
+}
+
+.a {
+    position: relative;
+}
+
+.b {
+    position: absolute;
+    display: none;
+}
+
+.jules_burger_pic {
+    width: 500px;
+} 
+
+.a:hover .b {
+    display: block;
+}
+
+
+.butch_wallas {
+    height: 100vh;
+    align-items: center;
+}
+
+.butch_street {
+    width: 500px;
+}
+
+.psycho_text {
+    height: 100vh;
+    width: 40vw;
+}
+
+.psycho_baker_wallas {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.baker {
+    width: 63vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.wallas {
+    width: 30vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.wallas_right {
+    width: 40vw;
+    align-items: flex-start;
+    background-color: #ff88ff;
+    position: relative
+}
+
+.fucker {
+    position: absolute;
+}
+
+.psycho_marion_butch {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.butch_left {
+    width: 30vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.marion_right {
+    width: 60vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.decibel {
+    font-family: "Decibel";
+    font-weight: 400;
+}
+
+.arnold {
+    font-family: "arnold";
+    font-weight: 400;
+}
+
