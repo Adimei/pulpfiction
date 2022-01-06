@@ -32,6 +32,27 @@
     box-sizing: border-box;
 }
 
+.container {
+    display: flex;
+}
+
+.strip {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: black;
+    height: 100px;
+    z-index: 10000;
+}
+
+.strip.strip_top {
+    top: 0;
+}
+
+.strip.strip_bottom {
+    bottom: 0;
+}
+
 .big {
     font-family: "mars-condensed";
     font-size: 6.5em;
@@ -50,16 +71,12 @@
 .so-special {
     height: 100vh;
     width: 100vw;
-    margin-left: 100px;
-    background-color: black;
-    position: relative;
 }
 
 .white_wrap {
     background-color: white;
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
-    position: absolute;
 }
 
 .what_makes {
