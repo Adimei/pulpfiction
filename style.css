@@ -37,21 +37,12 @@
 }
 
 .strip {
-    position: fixed;
-    left: 0;
-    right: 0;
+    width: 100vw;
     background-color: black;
     height: 100px;
     z-index: 10000;
 }
 
-.strip.strip_top {
-    top: 0;
-}
-
-.strip.strip_bottom {
-    bottom: 0;
-}
 
 .big {
     font-family: "mars-condensed";
@@ -63,10 +54,17 @@
     font-family: "arnold";
 }
 
+.small.warriors {
+    width: 400px;
+    margin-left: 200px;
+    margin-top: 460px;
+}
+
 .underline {
     text-decoration: underline;
-    text-decoration-color: #ff17e3;
+    /* text-decoration-color: #ff17e3; */
 }
+
 
 .so-special {
     height: 100vh;
@@ -74,10 +72,11 @@
 }
 
 .white_wrap {
-    background-color: white;
+    /* background-color: white; */
     height: 100vh;
     width: 100vw;
 }
+
 
 .what_makes {
     margin-top: 500px;
@@ -86,6 +85,8 @@
 
 .tarantino-special {
     display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 }
 
 .decibel_small {
@@ -105,16 +106,42 @@
 
 .decibel_big {
     font-family: "decibel";
-    font-size: 350px;
-    margin-bottom: 0;
-    margin-top: 100px;
+    font-size: 300px;
+    margin-bottom: -60px;
+    margin-top: 400px;
 }
+
+
+
+.head_number {
+    position: relative;
+}
+
+.number_wrap {
+    height: 100vh;
+    width: 700px;
+    align-items: center;
+    background-color: white;
+}
+
 
 .decibel_pink {
     font-family: "decibel";
-    font-size: 500px;
+    font-size: 700px;
     color: #ff17e3;
+    position: absolute;
+    bottom: -300px;
+    right: 0;
 }
+
+
+.strip_vertical {
+    width: 100px;
+    background-color: black;
+    height: 100vw;
+    z-index: 10000;
+}
+
 
 .gersh_left {
     font-family: "decibel";
@@ -132,12 +159,18 @@
     color: #ff17e3;
 }
 
+.steal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    bottom: 300px;
+}
+
 .i_steal_text {
     display: flex;
 }
 
 .glow-briefcase {
-    display: flex;
     height: 100vh;
     align-items: center;
 }
@@ -199,15 +232,31 @@ h1 {
 .lips-pics {
     background-color: white;
     align-items: center;
+    position: relative;
 }
 
 .lips_together {
     width: 100vw;
 }
 
+.mars_small {
+    font-family: "mars-condensed";
+    font-size: 30px;
+}
 
+.mars_small.year_left {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+}
 
-.the_good_the_bad {
+.mars_small.year_right {
+    position: absolute;
+    top: -15px;
+    right: 30px;
+}
+
+.good_bad_flex {
     display: flex;
 }
 
@@ -255,13 +304,47 @@ h1 {
     display: block;
 }
 
+.shoot_pf {
+    width: 500px;
+} 
+
+.angel_enter {
+    width: 500px;
+}
+
+.angel_eat {
+    width: 500px;
+}
+
+.angel_shoot {
+    width: 500px;
+}
+
 
 .butch_wallas {
     height: 100vh;
     align-items: center;
 }
 
+/* .butch_wallas_pics {
+    width: 1200px;
+    align-items: center;
+} */
+
+
 .butch_street {
+    width: 500px;
+}
+
+.wallas_street {
+    width: 500px;
+}
+
+.marion {
+    width: 500px;
+}
+
+.baker_boss {
     width: 500px;
 }
 
