@@ -32,27 +32,97 @@
     box-sizing: border-box;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+} 
+
 body {
     overflow: auto hidden;
 }
 
+p {
+    margin-bottom: 2vh;
+}
+ 
+h1 {
+    font-family: "mars-condensed";
+    font-weight: normal;
+    font-size: 7em;
+    line-height: 0.95;
+    text-align: center;
+}
+
+.mono_small {
+    font-family: "arnold";
+    font-size: 15px;
+}
+
 .container {
     display: flex;
-    /* scroll-snap-type: x mandatory; */
-    /* height: 100vh; */
+    height: 100vh;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
 }
 
-p {
-    margin: 0;
-}
-
-.strip {
+.container > div {
     width: 100vw;
-    background-color: black;
-    height: 100px;
-    z-index: 10000;
+    height: inherit;
+    scroll-snap-align: start;
 }
 
+.child_container {
+    display: flex;
+    height: inherit;
+    width: inherit;
+}
+
+.child_container_center {
+    display: flex;
+    height: inherit;
+    width: inherit;
+    align-items: center;
+}
+
+.child_page {
+    height: inherit;
+    width: inherit;
+}
+
+.child_page {
+    width: inherit;
+}
+
+.warriors {
+    align-items: flex-end;
+}
+
+.war {
+    justify-content: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 25vh;
+    font-size: 18px;
+    line-height: 1.3em;
+
+}
+
+.container_bg {
+    background-color: blue;
+}
+
+.div_bg {
+    background-color: yellow;
+}
+
+.mm_below {
+    align-self: flex-end;
+}
+
+.black_bg {
+    background-color: black;
+    color: white;
+}
 
 .big {
     font-family: "mars-condensed";
@@ -64,10 +134,13 @@ p {
     font-family: "arnold";
 }
 
-.small.warriors {
-    width: 400px;
+.the_greatest {
+    align-items: center;
+    width: 700px;
+}
+
+.taran {
     margin-left: 200px;
-    /* margin-top: 460px; */
 }
 
 .underline {
@@ -76,37 +149,23 @@ p {
 }
 
 
-.so-special {
-    display: flex;
+.so-special2 {
+    height: 100vh;
+    width: 100vw;
+    /* display: flex; */
+    /* align-items: flex-end; */
     /* width: 100vw; */
     /* scroll-snap-align: start; */
     /* scroll-snap-type: x mandatory; */
     /* align-self: flex-end; */
 }
 
-
-
 .tarantino-special {
     display: flex;
     /* flex-direction: row; */
     align-items: flex-end;
-}
-
-.white_wrap {
-    /* background-color: white; */
-    /* height: 100vh; */
-    height: 100vh;
-    width: 100vw;
-    /* scroll-snap-align: start;
-    scroll-padding-left: 100px;
-    scroll-padding-right: 100px; */
-    justify-content: flex-end;
-}
-
-.black_wrap {
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
+    bottom: 0;
+    left: 0;
 }
 
 .t_white {
@@ -114,31 +173,68 @@ p {
 }
 
 .number_wrap {
-    width: 60vw;
+height: 100vh;
+width: 100vw;
 }
 
-.decibel_small {
+
+.what_makes {
+    align-self: flex-end;
     font-family: "decibel";
     font-size: 60px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 4vh;
+    margin-left: 5vw;
 }
 
-.decibel_medium {
+.I_steal {
+    align-self: flex-end;
     font-family: "decibel";
-    font-size: 150px;
-    line-height: 140px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-left: 5vw; 
+    margin-bottom: 3.1vh;
 }
 
-.decibel_big {
-    font-family: "decibel";
+.I_steal_big {
     font-size: 300px;
-    line-height: 160px;
-    margin-top: 50vh;
-    margin-bottom: 0px;
+    line-height: 30%;
 }
+
+.what_makes_small {
+    font-size: 60px;
+}
+
+.I_steal_small {
+    font-size: 60px;
+    line-height: 30%;
+}
+
+.what_makes_medium, .I_steal_medium {
+    font-size: 150px;
+    line-height: 85%;
+}
+
+.what_makes_big {
+    font-size: 250px;
+    line-height: 85%;
+}
+
+
+
+
+.kiss_me {
+    font-family: "decibel";
+}
+
+.kiss_me_medium {
+    font-size: 150px;
+    line-height: 85%;
+}
+
+
+.kiss_me_big {
+    font-size: 300px;
+    line-height: 45%;
+}
+
 
 .decibel_pink {
     font-family: "decibel";
@@ -163,12 +259,12 @@ p {
 
 
 .pink {
+    /* color: #ff17e3; */
     color: #ff17e3;
 }
 
-.pastiche_svg {
-    width: auto;
-    max-height: 100vh;
+.image_svg {
+    height: 95vh;
 }
 .steal {
     /* display: flex; */
@@ -181,57 +277,111 @@ p {
     display: flex;
 }
 
+
+
+
+
 .glow-briefcase {
     height: 100vh;
     align-items: center;
 }
 
 .briefcase {
+    position: relative;
     margin: 75px;
 }
 
-.a {
+
+
+
+.showhim {
+    position: relative;
+    text-decoration: underline;
+}
+
+.showme {
+    position: absolute;
+    display: none;
+    bottom: 11px;
+    left: 0;
+}
+
+.showhim:hover .showme {
+    display: block;
+}
+
+.vinc_pic, .kiss_pic {
+    width: 500px;
+} 
+
+img.jv_pic, img.jules_burger_pic, img.shoot_pf, img.angel_enter, img.angel_eat, img.angel_shoot {
+    width: 400px;
+}
+
+
+
+.play {
+    position: absolute;
+    top: 70vh;
+    left: 0px;
+    width: 120px;
+    height: 120px;
+    z-index: 500;
+}
+
+span.hotspot:hover ~ .showhim .showme {
+    display: block;
+}
+
+.wraper_hot {
+    display: flex;
     position: relative;
 }
 
-.b {
-    position: absolute;
-    display: none;
-    top: -20px;
+.wraper_hot span.hotspot:hover ~ .the_good_the_bad_left_colum .showhim .showme {
+    display: block;
 }
 
-.vinc_pic {
-    width: 500px;
-} 
-
-.a:hover .b {
+.wraper_hot span.hotspot:hover ~ .the_good_the_bad_right_colum .showhim .showme {
     display: block;
 }
 
 
-.b {
-    position: absolute;
-    display: none;
-    top: 0;
+
+
+
+
+
+
+.a1 {
+    position: relative;
 }
 
-.kiss_pic {
-    width: 500px;
-} 
+.b1 {
+    position: absolute;
+    display: none;
+    bottom: -5px;
+    left: 0;
+}
 
-.a:hover .b {
+.a1:hover .b1 {
     display: block;
 }
 
-
-h1 {
-    font-family: "mars-condensed";
-    font-weight: normal;
-    font-size: 7em;
-    line-height: 0.95;
-    text-align: center;
+.a2 {
+    position: relative;
 }
 
+.b2 {
+    position: absolute;
+    display: none;
+    bottom: 80px;
+    left: 0px;
+}
+
+.a2:hover .b2 {
+    display: block;
+}
 
 .lips {
     display: block;
@@ -241,30 +391,32 @@ h1 {
 }
 
 .lips-pics {
-    background-color: white;
-    align-items: center;
+    /* background-color: white; */
+    /* align-items: center; */
     position: relative;
+    width: inherit;
 }
 
-.lips_together {
-    width: 100vw;
-}
-
-.mars_small {
+.lips_text {
     font-family: "mars-condensed";
     font-size: 30px;
 }
 
-.mars_small.year_left {
+.year_left {
     position: absolute;
     top: -15px;
     left: 30px;
 }
 
-.mars_small.year_right {
+.year_right {
     position: absolute;
     top: -15px;
     right: 30px;
+}
+
+.square {
+    width: 100vw;
+    object-fit: cover;
 }
 
 .good_bad_flex {
@@ -272,8 +424,15 @@ h1 {
 }
 
 .the_good_the_bad_left_colum {
-    margin-left: 40px;
-    margin-right: 20px;
+    width: 50vw;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.the_good_the_bad_right_colum {
+    width: 50vw;
+    margin-left: 15px;
+    margin-right: 30px;
 }
 
 .stevens_food {
@@ -281,39 +440,13 @@ h1 {
     margin-right: 40px;
 }
 
-.a {
-    position: relative;
-}
-
-.b {
-    position: absolute;
-    display: none;
-}
-
 .jv_pic {
     width: 500px;
 } 
 
-.a:hover .b {
-    display: block;
-}
-
-.a {
-    position: relative;
-}
-
-.b {
-    position: absolute;
-    display: none;
-}
-
 .jules_burger_pic {
     width: 500px;
 } 
-
-.a:hover .b {
-    display: block;
-}
 
 .shoot_pf {
     width: 500px;
@@ -336,11 +469,6 @@ h1 {
     height: 100vh;
     align-items: center;
 }
-
-/* .butch_wallas_pics {
-    width: 1200px;
-    align-items: center;
-} */
 
 
 .butch_street {
@@ -370,13 +498,13 @@ h1 {
     align-items: center;
 }
 
-.baker {
+.large_visual_left {
     width: 63vw;
     height: 100vh;
     object-fit: cover;
 }
 
-.wallas {
+.large_visual_right {
     width: 30vw;
     height: 100vh;
     object-fit: cover;
